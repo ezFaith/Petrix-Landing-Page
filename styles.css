@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar .nav-link {
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: #FF5733 !important; /* Sunset Orange */
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('Cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px 0;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.hero-section .btn {
+    animation: bounceIn 1s;
+}
+
+/* Features Section */
+.features {
+    margin-top: 60px;
+}
+
+.features h4 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.features p {
+    font-size: 1rem;
+    color: #000000 !important;
+}
+
+.feature-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Sunset Orange Glow */
+}
+
+/* Purchase Section */
+#purchase {
+    background-color: #000000;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .features h4 {
+        font-size: 1.2rem;
+    }
+
+    .features p {
+        font-size: 0.9rem;
+    }
+
+    .feature-box {
+        margin-bottom: 30px;
+    }
+
+    .navbar .navbar-brand img {
+        width: 100px;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes tada {
+    0% { transform: rotate(0); }
+    10% { transform: rotate(-3deg); }
+    20% { transform: rotate(3deg); }
+    30% { transform: rotate(-3deg); }
+    40% { transform: rotate(3deg); }
+    50% { transform: rotate(0); }
+}
